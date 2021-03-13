@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Forms</title>
+</head>
+<body>
+  <h1>Coding Form!</h1>
+  <!--Text form-->
+  <form>
+    <div>
+    <label for="email">Email: <br />
+    <input id="email" type="text" name="email" /></label>
+    </div>
+  <!--Dropdown List-->
+    <div>
+      <label for="why is coding cool">Why is coding cool? <br /></label>
+        <select id="why is coding cool" name="reason">
+          <label for="none">
+            <option value="none" selected="selected">Select an option</option>
+          </label>
+          <label for="Because it is interesting">
+            <option value="Because it is interesting">Because it is interesting</option>
+          </label>
+          <label for="Because it is fun">
+            <option value="Because it is fun">Because it is fun</option>
+          </label>
+          <label for="Because it is powerful">
+            <option value="Because it is powerful">Because it is powerful</option>
+          </label>
+        </select>
+    </div>
+  <!--Radio buttons-->
+    <div>
+      What is your favorite Language (choose one):
+      <br />
+        <input id="HTML" type="radio" name="language" value="HTML" checked="checked" />
+          <label for="HTML">HTML</label>
+        <input id="css" type="radio" name="language" value="css" />
+          <label for="css">CSS</label>
+        <input id="JS" type="radio" name="language" value="JS" />
+          <label for="JS">JavaScript</label>
+    </div>
+<!--Checkbox-->
+    <div>
+      <label>Would you like to sign up for more information? <br /> </label>
+        <input id="signup" type="checkbox" name="signup" value="Y" checked="checked" />
+          <label for="signup">Sign me up!</label>
+    </div>
+<!--Comments: Text Area-->
+  <div>
+    <label for="comments">Comments <br /></label>
+      <textarea id="comments" name="comments"></textarea>
+  </div>
+<!--Submit button-->
+    <div>
+        <input type="submit"/>
+    </div>
+  </form>
+</body>
+</html>
