@@ -1,0 +1,13 @@
+button:hover {
+  background-color: yellow;
+}
+
+table.striped thead > tr {
+  background-color: black;
+  text-align: center;
+  color: white;
+}
+
+table.striped tbody > tr:nth-child(odd) {
+  background-color: rgb(185, 185, 185);
+}
