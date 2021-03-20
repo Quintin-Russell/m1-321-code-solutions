@@ -1,6 +1,6 @@
 /* Container for whole page */
 .container {
-  max-width: 800px;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   font-family: sans-serif, 'Segoe UI', Tahoma, Geneva, Verdana;
@@ -12,14 +12,14 @@
   width: 25%;
 }
 
-/* 1/2 width of container column (2columns) */
-.column-two-quarter {
-  width: 50%;
+/* 1/3 width of container column */
+.column-third {
+  width: calc(100% / 3);
 }
 
-/* 3/4 width of container column (3columns) */
-.column-three-quarter {
-  width: 75%;
+/* 2/3 width of container column (2columns) */
+.column-two-thirds {
+  width: calc(200% / 3);
 }
 
 /* Row */
