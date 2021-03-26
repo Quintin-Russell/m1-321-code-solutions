@@ -12,29 +12,24 @@
 #bulbasaur {
   position: relative;
   top: calc(20px * 1);
-  left: calc(20px * 1);
 }
 
 #charmander {
   position: relative;
   top: calc(20px * 2);
-  left: calc(20px * 2);
 }
 
 #squirtle {
   position: relative;
   top: calc(20px * 4);
-  left: calc(20px * 4);
 }
 
 #pikachu {
   position: relative;
   top: calc(20px * 8);
-  left: calc(20px * 8);
 }
 
 #jigglypuff {
   position: relative;
   top: calc(20px * 16);
-  left: calc(20px * 16);
 }
