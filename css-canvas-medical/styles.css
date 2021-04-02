@@ -6,13 +6,7 @@
   align-items: center;
   width: 2000px;
   margin: auto;
-  justify-content: flex-end;
-}
-
-.justify-left {
-  width: 63%;
-  display: flex;
-  justify-content: start;
+  justify-content: space-between;
 }
 
 .logo {
@@ -39,6 +33,7 @@
   border-style: none;
   border: none;
   font-size: 20px;
+  width: 200px;
 }
 
 /* Image + Text formatting */
@@ -74,6 +69,8 @@
   color: white;
   font-size: 32px;
   position: absolute;
+  display: flex;
+  flex-direction: column;
 }
 
 .text {
