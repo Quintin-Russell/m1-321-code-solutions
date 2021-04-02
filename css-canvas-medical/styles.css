@@ -4,6 +4,15 @@
   border: inset;
   border-width: 0.5px;
   align-items: center;
+  width: 2000px;
+  margin: auto;
+  justify-content: flex-end;
+}
+
+.justify-left {
+  width: 63%;
+  display: flex;
+  justify-content: start;
 }
 
 .logo {
@@ -14,8 +23,7 @@
 .main-header > span {
   font-family: "Avenir", sans-serif;
   color: rgba(131, 131, 131, 0.863);
-  position: absolute;
-  right: 2rem;
+  margin: 0 4rem;
 }
 
 .main-header > span > a {
@@ -43,7 +51,7 @@
 .image-div {
   display: flex;
   align-items: center;
-  width: 70%;
+  width: 1600px;
   height: 800px;
   background-image: url('images/hero.jpg');
   background-size: cover;
@@ -83,7 +91,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 70%;
+  width: 1600px;
   flex-wrap: wrap;
   margin: 5rem auto;
   background-color: rgb(243, 243, 243);
@@ -101,7 +109,7 @@
 
 .row {
   display: flex;
-  width: 70%;
+  width: 1700px;
   margin: auto;
 }
 
@@ -112,7 +120,7 @@
 
 /* Ready to Learn More */
 .lm-container {
-  width: 75%;
+  width: 1800px;
   position: relative;
   margin: 1rem auto;
   height: 75px;
@@ -159,9 +167,9 @@
   background-color: rgb(80, 80, 80);
   color: white;
   align-items: center;
-  width: 100%;
+  width: 2000px;
   height: 500px;
-  margin: 2rem 0;
+  margin: 2rem auto;
 }
 
 .logo2 {
@@ -180,6 +188,8 @@
   display: flex;
   align-items: center;
   font-weight: bold;
+  margin: auto;
+  width: 2000px;
 }
 
 .spana {
