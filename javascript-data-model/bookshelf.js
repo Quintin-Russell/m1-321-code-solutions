@@ -16,9 +16,10 @@ var bookshelf = [
   }
 ];
 
-//log author name to console
-console.log("author of bookshelf[0]:", bookshelf[0].author)
-//log ISBN to console
-console.log("ISBN of bookshelf[0]:", bookshelf[0].isbn)
-//log title of bookshelf[2] to console
-console.log("title of bookshelf[2]:", bookshelf[2].title)
+// log author name to console
+console.log('author of bookshelf[0]:', bookshelf[0].author);
+// log ISBN to console
+console.log('ISBN of bookshelf[0]:', bookshelf[0].isbn);
+// log title of bookshelf[2] to console
+console.log('title of bookshelf[2]:', bookshelf[2].title);
+// end
