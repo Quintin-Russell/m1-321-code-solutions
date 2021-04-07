@@ -17,11 +17,19 @@
   display: flex;
   flex-direction: column;
   font-family: "DM-Sans", sans-serif;
-  max-width: 20%;
+  margin: 1rem;
+}
+
+.textbox {
+  margin: 0.5rem;
 }
 
 .font-size {
   font-size: 24px;
+}
+
+.highlight {
+  background-color: rgba(255, 255, 128, 0.5);
 }
 
 .grey {
@@ -34,7 +42,26 @@
 
 .img-cont {
   width: 100%;
-  background-image: url(images/dress1.jpeg);
   background-size: cover;
   height: 15rem;
+}
+
+.img-1 {
+  background-image: url(images/dress1.jpeg);
+}
+
+.img-2 {
+  background-image: url(images/ysl-bag.jpeg);
+}
+
+.img-3 {
+  background-image: url(images/key.jpeg);
+}
+
+.img-4 {
+  background-image: url(images/lv-bag.jpg);
+}
+
+.img-5 {
+  background-image: url(images/dress2.jpeg);
 }
