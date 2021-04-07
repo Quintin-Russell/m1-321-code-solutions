@@ -35,27 +35,27 @@ function isOldEnoughToDrinkAndDrive(person) {
 function categorizeAcidity(pH) {
   if ((pH >= 0) && (pH <= 14)) {
     if (pH === 7) {
-      document.write('neutral');
+      return ('neutral');
     } else {
       if (pH < 7) {
-        document.write('acid');
+        return ('acid');
       } else {
-        document.write('base');
+        return ('base');
       }
     }
   } else {
-    document.write('invalid pH level');
+    return ('invalid pH level');
   }
 }
 
 function introduceWarnerBro(name) {
   if ((name === 'yakko') || (name === 'wakko') || (name === 'dot')) {
     if ((name === 'yakko') || (name === 'wakko')) {
-      document.write("We're the warner brothers!");
+      return ("We're the warner brothers!");
     } else {
-      document.write("I'm cute~");
+      return ("I'm cute~");
     }
   } else {
-    document.write('Goodnight everybody');
+    return ('Goodnight everybody');
   }
 }
