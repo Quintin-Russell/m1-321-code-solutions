@@ -7,11 +7,11 @@ function chunk(array, size) {
   } else {
     for (let i = 0; i < len; i += size) {
       var newArray = [];
-      for (let L = i; L < (i + size); L++) {
-        if ((array[L] === undefined) || (array[L] === null)) {
-          continue;
+      for (let L = 0; L < size; L++) {
+        if ((L + i) < len) {
+          newArray.push(array[i + L]);
         } else {
-          newArray.push(array[L]);
+          break;
         }
       }
       finalArray.push(newArray);
