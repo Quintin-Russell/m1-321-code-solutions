@@ -2,13 +2,27 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(253, 241, 222);
   height: 1000px;
 }
 
 .lightbulb {
   width: 20rem;
   height: 20rem;
-  background-color: rgb(255, 239, 95);
   border-radius: 50%;
+}
+
+.bkgrdcolor-white {
+  background-color: rgb(253, 241, 222);
+}
+
+.bkgrdcolor-black {
+  background-color: rgb(15, 15, 15);
+}
+
+.bkgrdcolor-yel {
+  background-color: rgb(255, 239, 95);
+}
+
+.bkgrdcolor-gray {
+  background-color: rgb(73, 72, 72);
 }
