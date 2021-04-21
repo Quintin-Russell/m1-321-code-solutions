@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(253, 241, 222);
+  height: 1000px;
+}
+
+.lightbulb {
+  width: 20rem;
+  height: 20rem;
+  background-color: rgb(255, 239, 95);
+  border-radius: 50%;
+}
