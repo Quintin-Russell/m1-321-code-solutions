@@ -1,0 +1,40 @@
+/* modal css; position absolute for overlay */
+.hidden {
+  display: none;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.61);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* text box css */
+.text-box {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  max-height: 25%;
+  max-width: 25%;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+/* main pg css */
+.mainpg-button {
+  padding: 0.75rem 2rem;
+  color: white;
+  background-color: rgb(93, 0, 160);
+  font-size: 24px;
+  border-radius: 6px;
+}
+
+.mainpg-button:active {
+  transform: translateY(0.25rem);
+}
