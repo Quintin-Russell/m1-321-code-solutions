@@ -1,8 +1,4 @@
 /* modal css; position absolute for overlay */
-.hidden {
-  display: none;
-}
-
 .overlay {
   background: rgba(0, 0, 0, 0.61);
   position: absolute;
@@ -10,14 +6,14 @@
   bottom: 0;
   left: 0;
   right: 0;
-  display: flex;
+  display: inherit;
   justify-content: center;
   align-items: center;
 }
 
 /* text box css */
 .text-box {
-  display: flex;
+  display: inherit;
   flex-direction: column;
   background-color: white;
   height: 250px;
@@ -30,13 +26,22 @@
   border-radius: 10px;
 }
 
+.hidden {
+  display: none;
+}
+
+.flex {
+  display: flex;
+}
+
 .modal-button {
   padding: 13px 40px;
-  box-shadow: 1px 1px 1px;
+  box-shadow: 2px 2px grey;
   border-radius: 5px;
-  font-size: 18px;
+  font-size: 24px;
   color: white;
-  background-color: rgb(250, 113, 98);
+  background-color: rgb(255, 73, 53);
+  border: none;
 }
 
 /* main pg css */
