@@ -1,0 +1,30 @@
+span {
+  padding: 0.1rem;
+}
+
+.type {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto Mono", sans-serif;
+  font-size: 48px;
+  padding: 10px;
+}
+
+.blk-ul {
+  color: black;
+  text-decoration: underline;
+}
+
+.blk {
+  color: black;
+}
+
+.wrong {
+  color: red;
+  text-decoration: underline;
+}
+
+.correct {
+  color: chartreuse;
+}
