@@ -1,10 +1,9 @@
 /* exported findIndex */
 function findIndex(array, value) {
   var defIndex = -1;
-  var val;
   var i = 0;
-  for (val of array) {
-    if (val === value) {
+  for (var l = 0; l < array.length; l++) {
+    if (array[i] === value) {
       defIndex = i;
       break;
     }

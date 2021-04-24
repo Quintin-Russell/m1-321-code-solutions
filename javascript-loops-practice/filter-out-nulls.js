@@ -1,10 +1,9 @@
 /* exported filterOutNulls */
 function filterOutNulls(values) {
   var finalArray = [];
-  var val;
-  for (val of values) {
-    if (val != null) {
-      finalArray.push(val);
+  for (var i = 0; i < values.length; i++) {
+    if (values[i] != null) {
+      finalArray.push(values[i]);
     }
   }
   return finalArray;

@@ -1,10 +1,9 @@
 /* exported filterOutStrings */
 function filterOutStrings(values) {
   var finalArray = [];
-  var val;
-  for (val of values) {
-    if (typeof (val) !== 'string') {
-      finalArray.push(val);
+  for (var i = 0; i < values.length; i++) {
+    if (typeof (values[i]) !== 'string') {
+      finalArray.push(values[i]);
     }
   }
   return finalArray;
