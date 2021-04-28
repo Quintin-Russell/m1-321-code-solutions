@@ -57,9 +57,46 @@ var pokedex = [
   }
 ];
 
-// function renderPokemon(pokemon) {
-// create div w/ column-third class
-// var divColumnThird = document.createElement("div");
-// divColumnThird.className = "column-third";
-// console.log("divCOlumnThird", divColumnThird)
-// }
+function renderPokemon(pokemon) {
+  // create div w/ column-third class
+  var divColumnThird = document.createElement('div');
+  divColumnThird.className = 'column-third';
+  // console.log("divCOlumnThird", divColumnThird)
+  // create div w/ class pokemon-card; add to divColumnThird
+  var divPokemonCard = document.createElement('div');
+  divPokemonCard.className = 'pokemon-card';
+  divColumnThird.appendChild(divPokemonCard);
+  // add img and div w/ class pkemon-card-text to divPokemonCard
+  var img = document.createElement('img');
+  img.setAttribute('src', pokemon.imageUrl);
+  var divPokemonText = document.createElement('div');
+  divPokemonText.className = 'pokemon-card-text';
+  divPokemonCard.appendChild(img);
+  divPokemonCard.appendChild(divPokemonText);
+  // create/add h2, h3, p elms to divPokemonText
+  var h2 = document.createElement('h2');
+  var h2Text = pokemon.name;
+  var h2TxtNode = document.createTextNode(h2Text);
+  h2.appendChild(h2TxtNode);
+  var h3 = document.createElement('h3');
+  var h3Text = pokemon.number;
+  var h3TxtNode = document.createTextNode(h3Text);
+  h3.appendChild(h3TxtNode);
+  var p = document.createElement('p');
+  var text = pokemon.description;
+  var textNode = document.createTextNode(text);
+  p.appendChild(textNode);
+  divPokemonText.appendChild(h2);
+  divPokemonText.appendChild(h3);
+  divPokemonText.appendChild(p);
+  return divColumnThird;
+}
+
+// query DOM for "row" elm
+var row = document.querySelector('.row');
+// console.log(row)
+var pkmon;
+for (pkmon of pokedex) {
+  var newElm = renderPokemon(pkmon);
+  row.appendChild(newElm);
+}
