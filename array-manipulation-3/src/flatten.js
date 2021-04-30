@@ -1,15 +1,16 @@
 /* exported flatten */
 // find array.length and create [ ]--> for loop: for i find length, for each i, push to [ ] --> return [ ]
 function flatten(array) {
+  // console.log("length of array", array.length)
   var finalArray = [];
-  var innerArray;
-  for (innerArray of array) {
-    // console.log("inner loop fired", innerArray)
-    var innerIndex;
-    for (innerIndex of innerArray) {
-      // console.log("push loop fired", innerIndex)
-      // console.log(typeof(innerIndex))
-      finalArray.push(innerIndex);
+  for (var i = 0; i < array.length; i++) {
+    if (typeof (array[i]) === 'object') {
+      var innerIndex;
+      for (innerIndex of array[i]) {
+        finalArray.push(innerIndex);
+      }
+    } else {
+      finalArray.push(array[i]);
     }
   }
   // console.log("finalArray", finalArray)
