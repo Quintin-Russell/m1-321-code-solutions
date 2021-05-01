@@ -1,19 +1,19 @@
 /* exported reverseWords */
 function reverseWords(string) {
-  var wordArray = [];
-  // split strings at " "
+  var finalStr = '';
   string = string.split(' ');
-  // for loop (outer array); for loop (inner array): creates a new array --> .shift() to reverse order
+  // console.log(string);
+  // for word in string, for letter in word, unshift to final string --> add space after each word
   var word;
+  var letter;
   for (word of string) {
-    var array = [];
-    for (var i = 0; i < word.length; i++) {
-      array.unshift(word[i]);
-      // console.log("letter", word[i])
+    var newWord = '';
+    for (letter of word) {
+      newWord = letter + newWord;
     }
-    // console.log("array", array)
-    wordArray.push(array);
+    finalStr = finalStr + newWord + ' ';
   }
-  // console.log(wordArray)
-  // itterate thru word array and add letters to blank str
+  finalStr = finalStr.trim();
+  // console.log("finalStr", finalStr)
+  return finalStr;
 }
