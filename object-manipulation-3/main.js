@@ -270,7 +270,7 @@ function play(players, number) {
       continue;
     }
   }
-  // console.log(winner.name, "is the winner!!")
+  console.log(winner.name, 'is the winner!!');
 }
 
 play(players, 100);
