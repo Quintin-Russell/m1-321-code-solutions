@@ -23,9 +23,7 @@ var booksJSON = JSON.stringify(books);
 console.log('JSON books', booksJSON, typeof (booksJSON));
 
 // JSON student obj as string
-var student = JSON.stringify(
-  { 'number id': '1000', 'string Name': 'Billy Gates' }
-);
+var student = '{"number id": "1000", "string Name": "Billy Gates"}';
 console.log('student', student, typeof (student));
 
 // JSON.parse of student
