@@ -30,7 +30,6 @@ body {
   width: 100%;
 }
 
-/* your code 👇 here */
 @media screen and (min-width: 576px) {
   .col-sm-half {
     width: 50%;
@@ -40,5 +39,9 @@ body {
 @media screen and (min-width: 768px) {
   .col-lg-fourth {
     width: 25%;
+  }
+
+  .col-lg-third {
+    width: calc(100% / 3);
   }
 }
